@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Computer Graphics Summative Coursework Assignment</title>
+    <style>
+      body {
+        background-color:#EBF4FA;
+      }
+    </style>
+  </head>
+
+  <body onload="main()">
+    <div style = "float:left; padding-right: 50px;">
+    <canvas id="webgl_canvas" width="700" height="500">
+    <!-- Display an error message if the browser is incompatible with WebGL canvas -->
+    Please use a browser that supports "canvas"
+    </canvas>
+  </div>
+
+    <div style ="font-family: Helvetica; ">
+      <!-- User Instructions -->
+    <h3><b>User Instructions</b></h3>
+    <h4><b>Lighting, Animations</b></h3>
+        <ul style="list-style-type:disc; ">
+            <li>1 - Change Ambient Lighting State, On/Dimmed</li>
+            <li>2 - Turn Directional Lighting On/Off</li>
+            <li>3 - Move Office Chair, Laptop</li>
+            <li>4 - Open/Close Fridge Door</li>
+            <li>5 - Move Bar Stools</li>
+            <li>6 - Move Dining Chairs</li>
+            <li>7 - Move Dining Chairs 2</li>
+            <li>8 - Move Rug Across Room</li>
+            <li>9 - Move Books In/Out of Shelves</li>
+            <li>0 - Move Sofa Across Room</li>
+          </ul>
+    <h4><b>Navigation</b></h3>
+        <ul style="list-style-type:disc; ">
+          <li>W - Move Camera Position Forwards</li>
+          <li>S - Move Camera Position Backwards</li>
+          <li>A - Move Camera Position Left</li>
+          <li>D - Move Camera Position Right</li>
+          <li>T - Move Camera Position Up</li>
+          <li>G - Move Camera Position Down</li>
+          <li>Up/down arrows - Rotate model horizontally</li>
+          <li>Left/right arrows - Rotate model vertically</li>
+        </ul>
+    </div>
+
+    <!-- WebGL libraries -->
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <!-- Main program file -->
+    <script src="index.js"></script>
+  </body>
+</html>
